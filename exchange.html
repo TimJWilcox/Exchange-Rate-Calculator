@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="exchange.css">
+    <title>Document</title>
+</head>
+<body>
+    <div><p>Exchange Rate Calculator</p></div>
+    <div class = "rand">
+        <h2>South African Rand (ZAR)</h2>
+        <td><input type="number" name="txtPieces" id="txtZAR" value="" placeholder="" maxlength="50" ></td>
+    </div>
+
+    <div class = "Container-Option">
+        <select id="exchangeOptions">
+            <option id="USDexchange">USD/ZAR</option>
+            <option id="GBPexchange">GBP/ZAR</option>
+            <option id="JPYexchange">JPY/ZAR</option>
+            <option id="CHFexchange">CHF/ZAR</option>
+            <option id="CADexchange">CAD/ZAR</option>
+        </select>
+    </div>
+    <div class = "Container-1">
+        <div>
+            <button class= "btn btn-primary" onclick="getExchange()" >Calculate</button>
+            <button class= "btn btn-danger" onclick="history.go(0);">Reset</button>
+        </div>
+    </div>
+
+    <div class="Container-2" id="exchangeAnswer"></div>
+
+<script src = "exchange.js"></script>
+    
+</body>
+</html>
