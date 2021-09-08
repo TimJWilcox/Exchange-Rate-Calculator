@@ -8,7 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div><p>Exchange Rate Calculator</p></div>
+<div class = "Container-1">
+    <div class = "Container-2">
+        <h1>Exchange Rate Calculator</h1>
+    </div>
     <div class = "rand">
         <h2>South African Rand (ZAR)</h2>
         <td><input type="number" name="txtPieces" id="txtZAR" value="" placeholder="" maxlength="50" ></td>
@@ -25,13 +28,13 @@
     </div>
     <div class = "Container-1">
         <div>
-            <button class= "btn btn-primary" onclick="getExchange()" >Calculate</button>
+            <button class= "btn btn-success" onclick="getExchange()" >Calculate</button>
             <button class= "btn btn-danger" onclick="history.go(0);">Reset</button>
         </div>
     </div>
 
     <div class="Container-2" id="exchangeAnswer"></div>
-
+</div>
 <script src = "exchange.js"></script>
     
 </body>
